@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BulbliotecaIOS_Example' do
+  pod 'BulbliotecaIOS', :path => '../'
+
+  target 'BulbliotecaIOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
