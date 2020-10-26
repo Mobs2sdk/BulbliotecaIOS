@@ -1,0 +1,16 @@
+PODS:
+  - BulbliotecaIOS (0.1.0)
+
+DEPENDENCIES:
+  - BulbliotecaIOS (from `../`)
+
+EXTERNAL SOURCES:
+  BulbliotecaIOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BulbliotecaIOS: e89338195cdcd60f138cc55124f76fe76b54db77
+
+PODFILE CHECKSUM: 3997e4dc29fd803db3f0a6bf3f3bd795fca616c2
+
+COCOAPODS: 1.10.0

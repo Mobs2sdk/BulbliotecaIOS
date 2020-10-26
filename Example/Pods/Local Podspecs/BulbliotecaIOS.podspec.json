@@ -1,0 +1,22 @@
+{
+  "name": "BulbliotecaIOS",
+  "version": "0.1.0",
+  "summary": "A short description of BulbliotecaIOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Mobs2sdk/BulbliotecaIOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mobs2sdk": "administrator@mobs2.com"
+  },
+  "source": {
+    "git": "https://github.com/Mobs2sdk/BulbliotecaIOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BulbliotecaIOS/Classes/**/*"
+}

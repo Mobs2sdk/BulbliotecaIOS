@@ -1,0 +1,6 @@
+framework module BulbliotecaIOS {
+  umbrella header "BulbliotecaIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
