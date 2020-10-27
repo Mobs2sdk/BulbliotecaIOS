@@ -11,7 +11,7 @@
 		1F18290F2548B4A7002BBD14 /* BulbDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1829042548B4A7002BBD14 /* BulbDataParser.m */; };
 		1F1829102548B4A7002BBD14 /* BulbBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1829052548B4A7002BBD14 /* BulbBaseModel.m */; };
 		1F1829112548B4A7002BBD14 /* BulbRegularsDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1829062548B4A7002BBD14 /* BulbRegularsDefine.h */; };
-		1F1829122548B4A7002BBD14 /* BulbliotecaIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1829072548B4A7002BBD14 /* BulbliotecaIOS.swift */; };
+		1F1829122548B4A7002BBD14 /* BulbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1829072548B4A7002BBD14 /* BulbManager.swift */; };
 		1F1829132548B4A7002BBD14 /* BulbDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1829082548B4A7002BBD14 /* BulbDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F1829142548B4A7002BBD14 /* BulbService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1829092548B4A7002BBD14 /* BulbService.h */; };
 		1F1829152548B4A7002BBD14 /* BulbParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F18290A2548B4A7002BBD14 /* BulbParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,7 +54,7 @@
 		1F1829042548B4A7002BBD14 /* BulbDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BulbDataParser.m; path = BulbliotecaIOS/Classes/BulbDataParser.m; sourceTree = "<group>"; };
 		1F1829052548B4A7002BBD14 /* BulbBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BulbBaseModel.m; path = BulbliotecaIOS/Classes/BulbBaseModel.m; sourceTree = "<group>"; };
 		1F1829062548B4A7002BBD14 /* BulbRegularsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbRegularsDefine.h; path = BulbliotecaIOS/Classes/BulbRegularsDefine.h; sourceTree = "<group>"; };
-		1F1829072548B4A7002BBD14 /* BulbliotecaIOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulbliotecaIOS.swift; path = BulbliotecaIOS/Classes/BulbliotecaIOS.swift; sourceTree = "<group>"; };
+		1F1829072548B4A7002BBD14 /* BulbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulbManager.swift; path = BulbliotecaIOS/Classes/BulbManager.swift; sourceTree = "<group>"; };
 		1F1829082548B4A7002BBD14 /* BulbDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbDataParser.h; path = BulbliotecaIOS/Classes/BulbDataParser.h; sourceTree = "<group>"; };
 		1F1829092548B4A7002BBD14 /* BulbService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbService.h; path = BulbliotecaIOS/Classes/BulbService.h; sourceTree = "<group>"; };
 		1F18290A2548B4A7002BBD14 /* BulbParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbParser.h; path = BulbliotecaIOS/Classes/BulbParser.h; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 				1F1829052548B4A7002BBD14 /* BulbBaseModel.m */,
 				1F1829082548B4A7002BBD14 /* BulbDataParser.h */,
 				1F1829042548B4A7002BBD14 /* BulbDataParser.m */,
-				1F1829072548B4A7002BBD14 /* BulbliotecaIOS.swift */,
+				1F1829072548B4A7002BBD14 /* BulbManager.swift */,
 				1F18290A2548B4A7002BBD14 /* BulbParser.h */,
 				1F18290D2548B4A7002BBD14 /* BulbParser.m */,
 				1F1829062548B4A7002BBD14 /* BulbRegularsDefine.h */,
@@ -425,7 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1829122548B4A7002BBD14 /* BulbliotecaIOS.swift in Sources */,
+				1F1829122548B4A7002BBD14 /* BulbManager.swift in Sources */,
 				52EB9907172271CEBE540A41251FDB64 /* BulbliotecaIOS-dummy.m in Sources */,
 				1F1829102548B4A7002BBD14 /* BulbBaseModel.m in Sources */,
 				1F1829182548B4A7002BBD14 /* BulbParser.m in Sources */,

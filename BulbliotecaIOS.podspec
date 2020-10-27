@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BulbliotecaIOS'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'BulbliotecaIOS para os Bulbs'
   s.description      = 'BulbliotecaIOS para leitura dos Bulbs'
 

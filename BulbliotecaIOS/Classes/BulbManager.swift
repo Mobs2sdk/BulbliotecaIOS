@@ -8,7 +8,7 @@
 import Foundation
 import CoreBluetooth
 
-class BulbliotecaIOS : NSObject{
+public class BulbManager : NSObject{
     
     private var centralManager: CBCentralManager!
 
@@ -21,14 +21,14 @@ class BulbliotecaIOS : NSObject{
     let bulbBateriaCBUUID = CBUUID(string: "FF04")
     let bulbNomeCBUUID = CBUUID(string: "FF09")
     
-    func startScan(centralManager: CBCentralManager){
+    public func startScan(centralManager: CBCentralManager){
         centralManager.scanForPeripherals(withServices: [bulbCBUUID])
     }
-    func stopScan(centralManager: CBCentralManager){
+    public func stopScan(centralManager: CBCentralManager){
         centralManager.stopScan()
     }
     
-    func peripheralCharacteristic(characteristic: CBCharacteristic){
+    public func peripheralCharacteristic(characteristic: CBCharacteristic){
         switch characteristic.uuid {
           case bulbPrincipalCBUUID:
               let returnData = BulbDataParser.parseReadData(from: characteristic)["returnData"]
