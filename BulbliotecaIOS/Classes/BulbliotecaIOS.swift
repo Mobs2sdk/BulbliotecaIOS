@@ -8,7 +8,7 @@
 import Foundation
 import CoreBluetooth
 
-class BulbManager : NSObject{
+class BulbliotecaIOS : NSObject{
     
     private var centralManager: CBCentralManager!
 
