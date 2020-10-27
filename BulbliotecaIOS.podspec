@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
   s.swift_version    = '5.0'
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'BulbliotecaIOS/Classes/*.{swift,h,m}'
+  s.source_files = 'BulbliotecaIOS/Classes/**/*.{swift,h,m}'
   
   # s.resource_bundles = {
   #   'BulbliotecaIOS' => ['BulbliotecaIOS/Assets/*.png']
