@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0BEB4F4D1D7FCA8201FFF710EA62335B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1F1828E52548A6C1002BBD14 /* BulbParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828DA2548A6C0002BBD14 /* BulbParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F1828E62548A6C1002BBD14 /* BulbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1828DB2548A6C0002BBD14 /* BulbManager.swift */; };
-		1F1828E72548A6C1002BBD14 /* BulbBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1828DC2548A6C0002BBD14 /* BulbBaseModel.m */; };
-		1F1828E82548A6C1002BBD14 /* BulbParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1828DD2548A6C0002BBD14 /* BulbParser.m */; };
-		1F1828E92548A6C1002BBD14 /* BulbDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828DE2548A6C0002BBD14 /* BulbDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F1828EA2548A6C1002BBD14 /* BulbRegularsDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828DF2548A6C0002BBD14 /* BulbRegularsDefine.h */; };
-		1F1828EB2548A6C1002BBD14 /* BulbSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828E02548A6C0002BBD14 /* BulbSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F1828EC2548A6C1002BBD14 /* BulbTaskIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828E12548A6C1002BBD14 /* BulbTaskIDDefines.h */; };
-		1F1828ED2548A6C1002BBD14 /* BulbService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828E22548A6C1002BBD14 /* BulbService.h */; };
-		1F1828EE2548A6C1002BBD14 /* BulbBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828E32548A6C1002BBD14 /* BulbBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F1828EF2548A6C1002BBD14 /* BulbDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1828E42548A6C1002BBD14 /* BulbDataParser.m */; };
+		1F18290F2548B4A7002BBD14 /* BulbDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1829042548B4A7002BBD14 /* BulbDataParser.m */; };
+		1F1829102548B4A7002BBD14 /* BulbBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1829052548B4A7002BBD14 /* BulbBaseModel.m */; };
+		1F1829112548B4A7002BBD14 /* BulbRegularsDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1829062548B4A7002BBD14 /* BulbRegularsDefine.h */; };
+		1F1829122548B4A7002BBD14 /* BulbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1829072548B4A7002BBD14 /* BulbManager.swift */; };
+		1F1829132548B4A7002BBD14 /* BulbDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1829082548B4A7002BBD14 /* BulbDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1829142548B4A7002BBD14 /* BulbService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1829092548B4A7002BBD14 /* BulbService.h */; };
+		1F1829152548B4A7002BBD14 /* BulbParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F18290A2548B4A7002BBD14 /* BulbParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1829162548B4A7002BBD14 /* BulbBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F18290B2548B4A7002BBD14 /* BulbBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1829172548B4A7002BBD14 /* BulbSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F18290C2548B4A7002BBD14 /* BulbSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1829182548B4A7002BBD14 /* BulbParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F18290D2548B4A7002BBD14 /* BulbParser.m */; };
+		1F1829192548B4A7002BBD14 /* BulbTaskIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F18290E2548B4A7002BBD14 /* BulbTaskIDDefines.h */; };
 		270060D7E5068F32566B435DB9F24BA9 /* Pods-BulbliotecaIOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 597D71C73B0EA58E20258F089A908D00 /* Pods-BulbliotecaIOS_Tests-dummy.m */; };
 		2FF1B9F24630FE9851118B20B581083C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		52EB9907172271CEBE540A41251FDB64 /* BulbliotecaIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE48E965F337A1FF75821B7D05515F /* BulbliotecaIOS-dummy.m */; };
@@ -51,17 +51,17 @@
 		0F1EC7A544A0698C3E57E3EB9A147734 /* Pods-BulbliotecaIOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BulbliotecaIOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		186FD2F252313149DEC221BC6DEC534E /* Pods-BulbliotecaIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BulbliotecaIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E230A4B49EACB22058AFE1CF2F7218B /* Pods-BulbliotecaIOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BulbliotecaIOS_Tests-Info.plist"; sourceTree = "<group>"; };
-		1F1828DA2548A6C0002BBD14 /* BulbParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbParser.h; sourceTree = "<group>"; };
-		1F1828DB2548A6C0002BBD14 /* BulbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulbManager.swift; sourceTree = "<group>"; };
-		1F1828DC2548A6C0002BBD14 /* BulbBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulbBaseModel.m; sourceTree = "<group>"; };
-		1F1828DD2548A6C0002BBD14 /* BulbParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulbParser.m; sourceTree = "<group>"; };
-		1F1828DE2548A6C0002BBD14 /* BulbDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbDataParser.h; sourceTree = "<group>"; };
-		1F1828DF2548A6C0002BBD14 /* BulbRegularsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbRegularsDefine.h; sourceTree = "<group>"; };
-		1F1828E02548A6C0002BBD14 /* BulbSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbSDK.h; sourceTree = "<group>"; };
-		1F1828E12548A6C1002BBD14 /* BulbTaskIDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbTaskIDDefines.h; sourceTree = "<group>"; };
-		1F1828E22548A6C1002BBD14 /* BulbService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbService.h; sourceTree = "<group>"; };
-		1F1828E32548A6C1002BBD14 /* BulbBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbBaseModel.h; sourceTree = "<group>"; };
-		1F1828E42548A6C1002BBD14 /* BulbDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulbDataParser.m; sourceTree = "<group>"; };
+		1F1829042548B4A7002BBD14 /* BulbDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BulbDataParser.m; path = BulbliotecaIOS/Classes/BulbDataParser.m; sourceTree = "<group>"; };
+		1F1829052548B4A7002BBD14 /* BulbBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BulbBaseModel.m; path = BulbliotecaIOS/Classes/BulbBaseModel.m; sourceTree = "<group>"; };
+		1F1829062548B4A7002BBD14 /* BulbRegularsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbRegularsDefine.h; path = BulbliotecaIOS/Classes/BulbRegularsDefine.h; sourceTree = "<group>"; };
+		1F1829072548B4A7002BBD14 /* BulbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulbManager.swift; path = BulbliotecaIOS/Classes/BulbManager.swift; sourceTree = "<group>"; };
+		1F1829082548B4A7002BBD14 /* BulbDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbDataParser.h; path = BulbliotecaIOS/Classes/BulbDataParser.h; sourceTree = "<group>"; };
+		1F1829092548B4A7002BBD14 /* BulbService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbService.h; path = BulbliotecaIOS/Classes/BulbService.h; sourceTree = "<group>"; };
+		1F18290A2548B4A7002BBD14 /* BulbParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbParser.h; path = BulbliotecaIOS/Classes/BulbParser.h; sourceTree = "<group>"; };
+		1F18290B2548B4A7002BBD14 /* BulbBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbBaseModel.h; path = BulbliotecaIOS/Classes/BulbBaseModel.h; sourceTree = "<group>"; };
+		1F18290C2548B4A7002BBD14 /* BulbSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbSDK.h; path = BulbliotecaIOS/Classes/BulbSDK.h; sourceTree = "<group>"; };
+		1F18290D2548B4A7002BBD14 /* BulbParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BulbParser.m; path = BulbliotecaIOS/Classes/BulbParser.m; sourceTree = "<group>"; };
+		1F18290E2548B4A7002BBD14 /* BulbTaskIDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulbTaskIDDefines.h; path = BulbliotecaIOS/Classes/BulbTaskIDDefines.h; sourceTree = "<group>"; };
 		225DC6277CDCD63DF181318987173A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		25F6256EAD1EA8220DC413FF91AA1963 /* Pods_BulbliotecaIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BulbliotecaIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A215EFE5D1045F173B0E6E0DF961B0 /* Pods-BulbliotecaIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BulbliotecaIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,17 +191,17 @@
 		C317EAAB4162E0BF8ECC4D7715FD4B57 /* BulbliotecaIOS */ = {
 			isa = PBXGroup;
 			children = (
-				1F1828E32548A6C1002BBD14 /* BulbBaseModel.h */,
-				1F1828DC2548A6C0002BBD14 /* BulbBaseModel.m */,
-				1F1828DE2548A6C0002BBD14 /* BulbDataParser.h */,
-				1F1828E42548A6C1002BBD14 /* BulbDataParser.m */,
-				1F1828DB2548A6C0002BBD14 /* BulbManager.swift */,
-				1F1828DA2548A6C0002BBD14 /* BulbParser.h */,
-				1F1828DD2548A6C0002BBD14 /* BulbParser.m */,
-				1F1828DF2548A6C0002BBD14 /* BulbRegularsDefine.h */,
-				1F1828E22548A6C1002BBD14 /* BulbService.h */,
-				1F1828E12548A6C1002BBD14 /* BulbTaskIDDefines.h */,
-				1F1828E02548A6C0002BBD14 /* BulbSDK.h */,
+				1F18290B2548B4A7002BBD14 /* BulbBaseModel.h */,
+				1F1829052548B4A7002BBD14 /* BulbBaseModel.m */,
+				1F1829082548B4A7002BBD14 /* BulbDataParser.h */,
+				1F1829042548B4A7002BBD14 /* BulbDataParser.m */,
+				1F1829072548B4A7002BBD14 /* BulbManager.swift */,
+				1F18290A2548B4A7002BBD14 /* BulbParser.h */,
+				1F18290D2548B4A7002BBD14 /* BulbParser.m */,
+				1F1829062548B4A7002BBD14 /* BulbRegularsDefine.h */,
+				1F18290C2548B4A7002BBD14 /* BulbSDK.h */,
+				1F1829092548B4A7002BBD14 /* BulbService.h */,
+				1F18290E2548B4A7002BBD14 /* BulbTaskIDDefines.h */,
 				3980CBBAA83B4B4F59C83088883CFB06 /* Pod */,
 				001D6A2E1DCB1841475EBC6EC3443598 /* Support Files */,
 			);
@@ -260,14 +260,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1828ED2548A6C1002BBD14 /* BulbService.h in Headers */,
-				1F1828EC2548A6C1002BBD14 /* BulbTaskIDDefines.h in Headers */,
-				1F1828E52548A6C1002BBD14 /* BulbParser.h in Headers */,
-				1F1828EB2548A6C1002BBD14 /* BulbSDK.h in Headers */,
-				1F1828E92548A6C1002BBD14 /* BulbDataParser.h in Headers */,
+				1F1829172548B4A7002BBD14 /* BulbSDK.h in Headers */,
 				5DF1397EE42D83D43CEAD0FFB22C77C6 /* BulbliotecaIOS-umbrella.h in Headers */,
-				1F1828EE2548A6C1002BBD14 /* BulbBaseModel.h in Headers */,
-				1F1828EA2548A6C1002BBD14 /* BulbRegularsDefine.h in Headers */,
+				1F1829142548B4A7002BBD14 /* BulbService.h in Headers */,
+				1F1829132548B4A7002BBD14 /* BulbDataParser.h in Headers */,
+				1F1829192548B4A7002BBD14 /* BulbTaskIDDefines.h in Headers */,
+				1F1829152548B4A7002BBD14 /* BulbParser.h in Headers */,
+				1F1829162548B4A7002BBD14 /* BulbBaseModel.h in Headers */,
+				1F1829112548B4A7002BBD14 /* BulbRegularsDefine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +354,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					F89958AE9A9DF7582ACDC27E0F6D4B2A = {
+						LastSwiftMigration = 1200;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -420,11 +425,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1829122548B4A7002BBD14 /* BulbManager.swift in Sources */,
 				52EB9907172271CEBE540A41251FDB64 /* BulbliotecaIOS-dummy.m in Sources */,
-				1F1828E62548A6C1002BBD14 /* BulbManager.swift in Sources */,
-				1F1828E82548A6C1002BBD14 /* BulbParser.m in Sources */,
-				1F1828E72548A6C1002BBD14 /* BulbBaseModel.m in Sources */,
-				1F1828EF2548A6C1002BBD14 /* BulbDataParser.m in Sources */,
+				1F1829102548B4A7002BBD14 /* BulbBaseModel.m in Sources */,
+				1F1829182548B4A7002BBD14 /* BulbParser.m in Sources */,
+				1F18290F2548B4A7002BBD14 /* BulbDataParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6C75A662872164A0140B6D382C4080C /* BulbliotecaIOS.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -542,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1466F5898B32101E1BFDC90546E86C0 /* BulbliotecaIOS.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -561,6 +568,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
