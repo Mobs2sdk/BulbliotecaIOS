@@ -8,9 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0BEB4F4D1D7FCA8201FFF710EA62335B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1F1828E52548A6C1002BBD14 /* BulbParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828DA2548A6C0002BBD14 /* BulbParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1828E62548A6C1002BBD14 /* BulbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1828DB2548A6C0002BBD14 /* BulbManager.swift */; };
+		1F1828E72548A6C1002BBD14 /* BulbBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1828DC2548A6C0002BBD14 /* BulbBaseModel.m */; };
+		1F1828E82548A6C1002BBD14 /* BulbParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1828DD2548A6C0002BBD14 /* BulbParser.m */; };
+		1F1828E92548A6C1002BBD14 /* BulbDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828DE2548A6C0002BBD14 /* BulbDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1828EA2548A6C1002BBD14 /* BulbRegularsDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828DF2548A6C0002BBD14 /* BulbRegularsDefine.h */; };
+		1F1828EB2548A6C1002BBD14 /* BulbSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828E02548A6C0002BBD14 /* BulbSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1828EC2548A6C1002BBD14 /* BulbTaskIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828E12548A6C1002BBD14 /* BulbTaskIDDefines.h */; };
+		1F1828ED2548A6C1002BBD14 /* BulbService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828E22548A6C1002BBD14 /* BulbService.h */; };
+		1F1828EE2548A6C1002BBD14 /* BulbBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1828E32548A6C1002BBD14 /* BulbBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1828EF2548A6C1002BBD14 /* BulbDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1828E42548A6C1002BBD14 /* BulbDataParser.m */; };
 		270060D7E5068F32566B435DB9F24BA9 /* Pods-BulbliotecaIOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 597D71C73B0EA58E20258F089A908D00 /* Pods-BulbliotecaIOS_Tests-dummy.m */; };
 		2FF1B9F24630FE9851118B20B581083C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3EBF94B4477A9C1FE4DDAB35ACED6366 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3D7E438263A79A6E44AFB8E0CA2328 /* ReplaceMe.swift */; };
 		52EB9907172271CEBE540A41251FDB64 /* BulbliotecaIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE48E965F337A1FF75821B7D05515F /* BulbliotecaIOS-dummy.m */; };
 		5A23945E4A330D44FF837AB94155DBEF /* Pods-BulbliotecaIOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C091E66ED2F1550D81D391B94AB2AAB /* Pods-BulbliotecaIOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DF1397EE42D83D43CEAD0FFB22C77C6 /* BulbliotecaIOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB7DE5B001CE8EDB84C703E8EA0B02C /* BulbliotecaIOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,24 +51,34 @@
 		0F1EC7A544A0698C3E57E3EB9A147734 /* Pods-BulbliotecaIOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BulbliotecaIOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		186FD2F252313149DEC221BC6DEC534E /* Pods-BulbliotecaIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BulbliotecaIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E230A4B49EACB22058AFE1CF2F7218B /* Pods-BulbliotecaIOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BulbliotecaIOS_Tests-Info.plist"; sourceTree = "<group>"; };
-		225DC6277CDCD63DF181318987173A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		25F6256EAD1EA8220DC413FF91AA1963 /* Pods_BulbliotecaIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BulbliotecaIOS_Example.framework; path = "Pods-BulbliotecaIOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1828DA2548A6C0002BBD14 /* BulbParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbParser.h; sourceTree = "<group>"; };
+		1F1828DB2548A6C0002BBD14 /* BulbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulbManager.swift; sourceTree = "<group>"; };
+		1F1828DC2548A6C0002BBD14 /* BulbBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulbBaseModel.m; sourceTree = "<group>"; };
+		1F1828DD2548A6C0002BBD14 /* BulbParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulbParser.m; sourceTree = "<group>"; };
+		1F1828DE2548A6C0002BBD14 /* BulbDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbDataParser.h; sourceTree = "<group>"; };
+		1F1828DF2548A6C0002BBD14 /* BulbRegularsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbRegularsDefine.h; sourceTree = "<group>"; };
+		1F1828E02548A6C0002BBD14 /* BulbSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbSDK.h; sourceTree = "<group>"; };
+		1F1828E12548A6C1002BBD14 /* BulbTaskIDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbTaskIDDefines.h; sourceTree = "<group>"; };
+		1F1828E22548A6C1002BBD14 /* BulbService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbService.h; sourceTree = "<group>"; };
+		1F1828E32548A6C1002BBD14 /* BulbBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbBaseModel.h; sourceTree = "<group>"; };
+		1F1828E42548A6C1002BBD14 /* BulbDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulbDataParser.m; sourceTree = "<group>"; };
+		225DC6277CDCD63DF181318987173A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		25F6256EAD1EA8220DC413FF91AA1963 /* Pods_BulbliotecaIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BulbliotecaIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A215EFE5D1045F173B0E6E0DF961B0 /* Pods-BulbliotecaIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BulbliotecaIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2B1D268A1BF82E403C51A70512715121 /* Pods-BulbliotecaIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BulbliotecaIOS_Example.modulemap"; sourceTree = "<group>"; };
 		2E71540FE03CF2E15CC9CCB5A4D2EC95 /* Pods-BulbliotecaIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BulbliotecaIOS_Example-dummy.m"; sourceTree = "<group>"; };
 		597D71C73B0EA58E20258F089A908D00 /* Pods-BulbliotecaIOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BulbliotecaIOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		5BDE48E965F337A1FF75821B7D05515F /* BulbliotecaIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BulbliotecaIOS-dummy.m"; sourceTree = "<group>"; };
-		5FA26A68D3C6556C14284EDAFFF107D7 /* Pods_BulbliotecaIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BulbliotecaIOS_Tests.framework; path = "Pods-BulbliotecaIOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69BEB0BDA0214232BFFCDE32E3D711C0 /* BulbliotecaIOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BulbliotecaIOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5FA26A68D3C6556C14284EDAFFF107D7 /* Pods_BulbliotecaIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BulbliotecaIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69BEB0BDA0214232BFFCDE32E3D711C0 /* BulbliotecaIOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BulbliotecaIOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		728C6E947A0EC288F500B7FC943E2B35 /* Pods-BulbliotecaIOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BulbliotecaIOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7C091E66ED2F1550D81D391B94AB2AAB /* Pods-BulbliotecaIOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BulbliotecaIOS_Tests-umbrella.h"; sourceTree = "<group>"; };
 		909F83BCB6A78F7526EC46B476C47EBA /* Pods-BulbliotecaIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BulbliotecaIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9388CB480B481FD356A5F373A8EBF2CA /* Pods-BulbliotecaIOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BulbliotecaIOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9637069CDDEEA42D199AB37A665C6EEE /* BulbliotecaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BulbliotecaIOS.framework; path = BulbliotecaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9637069CDDEEA42D199AB37A665C6EEE /* BulbliotecaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BulbliotecaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD8AE562B9A27E98EEAC1669E3A13B1 /* Pods-BulbliotecaIOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BulbliotecaIOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F3D7E438263A79A6E44AFB8E0CA2328 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = BulbliotecaIOS/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1466F5898B32101E1BFDC90546E86C0 /* BulbliotecaIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BulbliotecaIOS.debug.xcconfig; sourceTree = "<group>"; };
 		B3D501C5FD70FB1FA0AE0E072C10713D /* BulbliotecaIOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulbliotecaIOS-prefix.pch"; sourceTree = "<group>"; };
 		BB2953DB2B4D47AF89DD7D98324D6808 /* Pods-BulbliotecaIOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BulbliotecaIOS_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -69,7 +89,7 @@
 		D6C75A662872164A0140B6D382C4080C /* BulbliotecaIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BulbliotecaIOS.release.xcconfig; sourceTree = "<group>"; };
 		FA1DC7B562589B2BE29B70FD8FCD3A0F /* Pods-BulbliotecaIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BulbliotecaIOS_Tests.modulemap"; sourceTree = "<group>"; };
 		FEB7DE5B001CE8EDB84C703E8EA0B02C /* BulbliotecaIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulbliotecaIOS-umbrella.h"; sourceTree = "<group>"; };
-		FFFC4114D518F173362360831E2A2931 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FFFC4114D518F173362360831E2A2931 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +191,17 @@
 		C317EAAB4162E0BF8ECC4D7715FD4B57 /* BulbliotecaIOS */ = {
 			isa = PBXGroup;
 			children = (
-				9F3D7E438263A79A6E44AFB8E0CA2328 /* ReplaceMe.swift */,
+				1F1828E32548A6C1002BBD14 /* BulbBaseModel.h */,
+				1F1828DC2548A6C0002BBD14 /* BulbBaseModel.m */,
+				1F1828DE2548A6C0002BBD14 /* BulbDataParser.h */,
+				1F1828E42548A6C1002BBD14 /* BulbDataParser.m */,
+				1F1828DB2548A6C0002BBD14 /* BulbManager.swift */,
+				1F1828DA2548A6C0002BBD14 /* BulbParser.h */,
+				1F1828DD2548A6C0002BBD14 /* BulbParser.m */,
+				1F1828DF2548A6C0002BBD14 /* BulbRegularsDefine.h */,
+				1F1828E22548A6C1002BBD14 /* BulbService.h */,
+				1F1828E12548A6C1002BBD14 /* BulbTaskIDDefines.h */,
+				1F1828E02548A6C0002BBD14 /* BulbSDK.h */,
 				3980CBBAA83B4B4F59C83088883CFB06 /* Pod */,
 				001D6A2E1DCB1841475EBC6EC3443598 /* Support Files */,
 			);
@@ -230,7 +260,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1828ED2548A6C1002BBD14 /* BulbService.h in Headers */,
+				1F1828EC2548A6C1002BBD14 /* BulbTaskIDDefines.h in Headers */,
+				1F1828E52548A6C1002BBD14 /* BulbParser.h in Headers */,
+				1F1828EB2548A6C1002BBD14 /* BulbSDK.h in Headers */,
+				1F1828E92548A6C1002BBD14 /* BulbDataParser.h in Headers */,
 				5DF1397EE42D83D43CEAD0FFB22C77C6 /* BulbliotecaIOS-umbrella.h in Headers */,
+				1F1828EE2548A6C1002BBD14 /* BulbBaseModel.h in Headers */,
+				1F1828EA2548A6C1002BBD14 /* BulbRegularsDefine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +421,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EB9907172271CEBE540A41251FDB64 /* BulbliotecaIOS-dummy.m in Sources */,
-				3EBF94B4477A9C1FE4DDAB35ACED6366 /* ReplaceMe.swift in Sources */,
+				1F1828E62548A6C1002BBD14 /* BulbManager.swift in Sources */,
+				1F1828E82548A6C1002BBD14 /* BulbParser.m in Sources */,
+				1F1828E72548A6C1002BBD14 /* BulbBaseModel.m in Sources */,
+				1F1828EF2548A6C1002BBD14 /* BulbDataParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,8 +532,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
