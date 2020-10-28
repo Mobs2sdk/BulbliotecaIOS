@@ -12,14 +12,14 @@ public class BulbManager : NSObject{
     
     private var centralManager: CBCentralManager!
 
-    private var bulbPeripheral: CBPeripheral!
+    private var discoveredPeripheral: CBPeripheral!
     
-    let bulbCBUUID: CBUUID = CBUUID(string: "FF00")
-    let bulbPrincipalCBUUID = CBUUID(string: "FF02")
-    let bulbSecundarioCBUUID = CBUUID(string: "FF03")
-    let bulbMACBUUID = CBUUID(string: "FF0C")
-    let bulbBateriaCBUUID = CBUUID(string: "FF04")
-    let bulbNomeCBUUID = CBUUID(string: "FF09")
+    private let bulbCBUUID: CBUUID = CBUUID(string: "FF00")
+    private let bulbPrincipalCBUUID = CBUUID(string: "FF02")
+    private let bulbSecundarioCBUUID = CBUUID(string: "FF03")
+    private let bulbMACBUUID = CBUUID(string: "FF0C")
+    private let bulbBateriaCBUUID = CBUUID(string: "FF04")
+    private let bulbNomeCBUUID = CBUUID(string: "FF09")
     
     public func startScan(centralManager: CBCentralManager){
         centralManager.scanForPeripherals(withServices: [bulbCBUUID])
@@ -28,36 +28,51 @@ public class BulbManager : NSObject{
         centralManager.stopScan()
     }
     
-    public func peripheralCharacteristic(characteristic: CBCharacteristic){
+    public func cancelPeripheralConnection() {
+        centralManager?.cancelPeripheralConnection(discoveredPeripheral!)
+    }
+    
+    public func caracteristicasToRead () -> Array<CBUUID>{
+        return [bulbPrincipalCBUUID,bulbSecundarioCBUUID,bulbMACBUUID,bulbBateriaCBUUID,bulbNomeCBUUID]
+    }
+    
+    public func peripheralCharacteristic(characteristic: CBCharacteristic)-> Dictionary<String, String>{
         switch characteristic.uuid {
           case bulbPrincipalCBUUID:
               let returnData = BulbDataParser.parseReadData(from: characteristic)["returnData"]
               let data:NSDictionary = returnData as! NSDictionary
-              let caracteristica = data["major"]
-              print(caracteristica ?? "No Principal")
+            let caracteristica:[String:String] = ["principal": data["major"] as? String ?? "No Value"]
+            
+            return (caracteristica)
+              
           case bulbSecundarioCBUUID:
               let returnData = BulbDataParser.parseReadData(from: characteristic)["returnData"]
               let data:NSDictionary = returnData as! NSDictionary
-              let caracteristica = data["minor"]
-              print(caracteristica ?? "No Secundario")
+            let caracteristica:[String:String] = ["secundario": data["minor"] as? String ?? "No Value"]
+            return (caracteristica)
+              
           case bulbMACBUUID:
               let returnData = BulbDataParser.parseReadData(from: characteristic)["returnData"]
               let data:NSDictionary = returnData as! NSDictionary
-              let caracteristica = data["macAddress"]
-              print(caracteristica ?? "No MAC")
+              let caracteristica:[String:String] = ["MAC": data["macAddress"] as? String ?? "No Value"]
+            return (caracteristica)
+              
           case bulbBateriaCBUUID:
               let returnData = BulbDataParser.parseReadData(from: characteristic)["returnData"]
               let data:NSDictionary = returnData as! NSDictionary
-              let caracteristica = data["measurePower"]
-              print(caracteristica ?? "No Bateria")
+              let caracteristica:[String:String] = ["bateria": data["measurePower"] as? String ?? "No Value"]
+            return (caracteristica)
+              
           case bulbNomeCBUUID:
               let returnData = BulbDataParser.parseReadData(from: characteristic)["returnData"]
               let data:NSDictionary = returnData as! NSDictionary
-              let caracteristica = data["bulbName"]
-              print(caracteristica ?? "No Nome")
+              let caracteristica:[String:String] = ["name": data["bulbName"] as? String ?? "No Value"]
+            return (caracteristica)
+              
           default:
-            return
+            return[:]
         }
+        
     }
 }
 
