@@ -36,6 +36,10 @@ public class BulbManager : NSObject{
         return [bulbPrincipalCBUUID,bulbSecundarioCBUUID,bulbMACBUUID,bulbBateriaCBUUID,bulbNomeCBUUID]
     }
     
+    public func reconhecerBulb() -> Array<CBUUID>{
+        return [bulbPrincipalCBUUID]
+    }
+    
     public func peripheralCharacteristic(characteristic: CBCharacteristic)-> Dictionary<String, String>{
         switch characteristic.uuid {
           case bulbPrincipalCBUUID:
